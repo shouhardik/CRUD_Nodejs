@@ -14,7 +14,7 @@ con.on('open',()=>{
     console.log('Connected to mongodb...')
 })
 
-app.use(express.json())
+app.use(express.json() )
 
 const alRouter=require('./routers/al')
 app.use('/al',alRouter)
